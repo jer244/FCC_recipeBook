@@ -1,0 +1,18 @@
+    .mainHeader {
+      background-color: darkgray;
+      color: white;
+      height: 50px;
+      width: 100%;
+      padding:4px;
+    }
+
+    .navList {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+    a {
+        color: white;
+    }
