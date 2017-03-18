@@ -13,10 +13,8 @@ export class RecipeListComponent implements OnInit {
 
   recipes: Recipe[] = [];
 
-  @Output() recipeSelected: EventEmitter<Recipe> =  new EventEmitter();
-
   onSelected(recipe: Recipe) {
-    this.recipeSelected.emit(recipe);
+    
   }
 
   constructor(private recipeService: RecipeService) { }
