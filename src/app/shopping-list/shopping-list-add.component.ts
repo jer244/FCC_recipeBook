@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shopping-list-add.component.css']
 })
 export class ShoppingListAddComponent implements OnInit {
+  isAdd = true;
 
   constructor() { }
 
