@@ -1,9 +1,9 @@
 <div class="row">
   <div class="col-xs-10">
-    <rb-shopping-list-add></rb-shopping-list-add>
+    <rb-shopping-list-add [item]="selectedItem"></rb-shopping-list-add>
     <hr>
     <ul class="list-group">
-      <a *ngFor="let item of items" class="list-group-item" style="cursor: pointer">{{item.name}} {{item.amount}}></a>
+      <a *ngFor="let item of items" (click)="onSelectItem(item)" class="list-group-item" style="cursor: pointer">{{item.name}} {{item.amount}}></a>
     </ul>
   </div>
 </div>
